@@ -1,11 +1,12 @@
 import {Link, useNavigate} from 'react-router-dom'
 import "./Navbar.css";
 import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../context/AuthContext';
 
  const Navbar = () => {
    const path = useLocation().pathname;
-   const [currentUser, setCurrentUser] = useState(true);
+   const state = useContext(AuthContext)
    const navigate = useNavigate()
    const displayName = "Cemalettin";
 const signOutFunc =()=>{
