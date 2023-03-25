@@ -22,11 +22,11 @@ navigate("/register");
            style={{ textDecoration: "none" }}
            to={`${path === "/" ? "/comments" : "/"}`}
          >
-           {/* <div className="h1">
+           <div className="h1">
              Movie<span>DataBase</span>
              {currentUser && path === "/" && <h6>Comment Page</h6>}
              {currentUser && path === "/comments" && <h6>Home Page</h6>}
-           </div> */}
+           </div>
          </Link>
        </div>
        <div className="logout">
